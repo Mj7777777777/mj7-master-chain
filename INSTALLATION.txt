@@ -1,0 +1,25 @@
+MJ7 MASTER CHAIN - INSTALLATION
+
+WINDOWS (FL Studio)
+1. Copiez le dossier "MJ7 Master Chain.vst3" dans :
+   C:\Program Files\Common Files\VST3
+2. Ouvrez FL Studio > Options > Manage plugins > Find installed plugins.
+3. Chargez "MJ7 Master Chain" dans le DERNIER slot de la piste Master du mixeur
+   (apres tous vos autres effets de master).
+
+MAC (FL Studio)
+1. Copiez "MJ7 Master Chain.vst3" dans :
+   Macintosh HD/Bibliotheque/Audio/Plug-Ins/VST3
+   (et, si vous voulez aussi l'Audio Unit, "MJ7 Master Chain.component" dans .../Plug-Ins/Components)
+2. Le plugin n'est pas signe par un compte developpeur Apple. Ouvrez l'application Terminal et collez :
+   sudo xattr -cr "/Library/Audio/Plug-Ins/VST3/MJ7 Master Chain.vst3"
+   sudo xattr -cr "/Library/Audio/Plug-Ins/Components/MJ7 Master Chain.component"
+3. FL Studio > Options > Manage plugins > Find installed plugins.
+
+PREMIERE UTILISATION
+1. Laissez de la marge dans le mix : crete autour de -6 dBFS, pas de limiteur sur le master avant le plugin.
+2. Choisissez le genre et la cible de diffusion (Streaming -14 LUFS pour Spotify, YouTube, Deezer, Boomplay).
+3. Lisez le passage le plus fort du morceau et appuyez sur ANALYSER : 20 secondes d'ecoute, puis calage.
+4. Comparez avec ECOUTER L'ORIGINAL (comparaison a niveau egal).
+5. Pour verifier le niveau final : "Remise a zero", puis lisez le morceau EN ENTIER et regardez le LUFS integre.
+   Ajustez avec GAIN si besoin (l'analyse se fait sur 20 secondes, le morceau entier peut differer de quelques dixiemes).
